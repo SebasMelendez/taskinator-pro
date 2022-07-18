@@ -110,7 +110,7 @@ $(".list-group").on("blur", "textarea", function() {
   var index = $(this)
     .closest(".list-group-item")
     .index();
-
+  console.log(this)
   // update task in array and re-save to localstorage
   tasks[status][index].text = text;
   saveTasks();
